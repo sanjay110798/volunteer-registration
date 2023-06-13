@@ -131,6 +131,7 @@ $('#form-submit').click(function() {
 });
 
 $(".checkbox-dropdown").click(function () {
+    // $(".checkbox-dropdown").removeClass('is-active');
     $(this).toggleClass("is-active");
 });
 

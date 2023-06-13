@@ -51,36 +51,36 @@ if($_GET['format']=='email')
 			$strMessage = $strMessage;
 		
 			// $mailTo = "kanhu.gouda@hkm-group.org,shivamurthy.vk@hkm-group.org,donor.care@hkm-group.org";
-		// 	$mailTo = $email;
+			$mailTo = $email;
 			
-		// 	$mail = new PHPMailer;
-		// 	//$mail->SMTPDebug = 4;                               // Enable verbose debug output
-		// 	$mail->isSMTP();                                      // Set mailer to use SMTP
-		// 	$mail->Host = 'email-smtp.ap-south-1.amazonaws.com';  // Specify main and backup SMTP servers
-		// 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
-		// 	$mail->Username = 'AKIAREHSYPORZNCSFJFP';             // SMTP username
-		// 	$mail->Password = 'BE9zDesklf2hGxIg1pUrrtUvNfsHyEYgCxhIYiQQMMtr';                           	  // SMTP password
-		// 	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-		// 	$mail->Port = 587;                                    // TCP port to connect to
+			$mail = new PHPMailer;
+			//$mail->SMTPDebug = 4;                               // Enable verbose debug output
+			$mail->isSMTP();                                      // Set mailer to use SMTP
+			$mail->Host = 'email-smtp.ap-south-1.amazonaws.com';  // Specify main and backup SMTP servers
+			$mail->SMTPAuth = true;                               // Enable SMTP authentication
+			$mail->Username = 'AKIAREHSYPORZNCSFJFP';             // SMTP username
+			$mail->Password = 'BE9zDesklf2hGxIg1pUrrtUvNfsHyEYgCxhIYiQQMMtr';                           	  // SMTP password
+			$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+			$mail->Port = 587;                                    // TCP port to connect to
 			
-		// 	$mail->setFrom('donor.care@hkm-group.org', 'ISKCON Donor Care');
-		// 	$email_ids = explode(',', $mailTo);
-		// 	foreach($email_ids as $address) {
-		// 		$mail->addAddress($address);
-		// 	}
+			$mail->setFrom('donor.care@hkm-group.org', 'ISKCON Donor Care');
+			$email_ids = explode(',', $mailTo);
+			foreach($email_ids as $address) {
+				$mail->addAddress($address);
+			}
 			
-		// 	$mail->isHTML(true);                                // Set email format to HTML
-		// 	$mail->Subject = $strSubject;
-		// 	$mail->Body    = $strMessage;
-		// 	$mail->AltBody = $strMessage;
+			$mail->isHTML(true);                                // Set email format to HTML
+			$mail->Subject = $strSubject;
+			$mail->Body    = $strMessage;
+			$mail->AltBody = $strMessage;
 			
-        // if(!$mail->send()) {        
-        //     $arr=[
-        //         'error'=>true,
-        //         'msg'=>'<span style="color:red;">Failed</span>'
-        //     ];
-        //     echo json_encode($arr);
-        // } else {
+        if(!$mail->send()) {        
+            $arr=[
+                'error'=>true,
+                'msg'=>'<span style="color:red;">Failed</span>'
+            ];
+            echo json_encode($arr);
+        } else {
             
             $todaysDate = $date->format('Y-m-d H:i:s');
             $addingMinutes= date('Y-m-d H:i:s',strtotime($todaysDate.'+ 10 minute'));
@@ -93,7 +93,7 @@ if($_GET['format']=='email')
                 'msg'=>'<span style="color:green;">OTP Send Successfully</span>'
             ];
             echo json_encode($arr);
-        // }
+        }
 
 }
 if($_GET['format']=='checkotp')

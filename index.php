@@ -378,7 +378,7 @@
                                             <ul class="checkbox-dropdown-list">
                                                 <li>
                                                     <label>
-                                                        <p class="radio-p">
+                                                        <p class="radio-pp">
                                                             <input type="radio" id="mo_1" class="radio"
                                                                 name="mode_of_offering" value="Remote">
                                                             <label for="mo_1">Remote</label>
@@ -387,7 +387,7 @@
                                                 </li>
                                                 <li>
                                                     <label>
-                                                        <p class="radio-p">
+                                                        <p class="radio-pp">
                                                             <input type="radio" id="mo_2" class="radio"
                                                                 name="mode_of_offering" value="At Service Location">
                                                             <label for="mo_2">At Service Location</label>
@@ -397,7 +397,7 @@
                                                 </li>
                                                 <li>
                                                     <label>
-                                                        <p class="radio-p">
+                                                        <p class="radio-pp">
                                                             <input type="radio" id="mo_3" class="radio"
                                                                 name="mode_of_offering" value="A Combination of Both">
                                                             <label for="mo_3">A Combination of Both</label>

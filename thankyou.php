@@ -24,7 +24,7 @@
         <div class="container-fluid px-0">
             <div class="row mx-0">
                 <div class="col-md-12 px-0">
-                    <div class="desktop-banner">
+                    <div class="desktop-banner2">
                         <img src="assets/img/banner.jpg" alt="">
                     </div>
                 </div>
@@ -32,18 +32,42 @@
         </div>
     </section>
     <section class="login-main-wrapper">
-        <div class="main-container">
-            <div class="login-process">
-                <div class="login-main-container">
-                    <div class="thankyou-wrapper">
-                        <h1><img src="http://montco.happeningmag.com/wp-content/uploads/2014/11/thankyou.png"
-                                alt="thanks" /></h1>
-                        <div class="clr"></div>
-                    </div>
-                    <div class="clr"></div>
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-12 text-center">
+                    <h5 class="thnk-h5">Registration Confirmation</h5>
+                </div>
+                <div class="col-md-12">
+                    <p>Dear [Volunteer's Name],</p>
+
+                    <p>We are delighted to inform you that your enrollment as a volunteer for Sri Krishna Janmashtami
+                        2023 has been successfully processed. On behalf of the Sri Krishna Janmashtami Organizing
+                        Committee, we extend a warm welcome to you and express our gratitude for your commitment to this
+                        auspicious event.</p>
+
+                    <p>Your dedication and support as a volunteer will play a vital role in ensuring the smooth and
+                        memorable celebration of Sri Krishna Janmashtami. We are confident that your skills and
+                        enthusiasm will greatly contribute to the success of the event.<br>
+                        As a registered volunteer, you will receive further communication regarding volunteer training,
+                        duties, and other necessary information as we approach the event date. We kindly request you to
+                        mark your calendar and keep an eye on your email inbox for updates.</p>
+
+                    <p> We would like to take this opportunity to express our heartfelt appreciation for your commitment
+                        to making Sri Krishna Janmashtami a grand and joyous celebration. Your dedication to service and
+                        devotion to Lord Krishna are truly commendable.</p>
+
+                    <p>Should you have any questions or require any assistance, please feel free to reach out to our
+                        volunteer coordinator at [+91 7022793344]. We are here to support you throughout your volunteer
+                        journey.</p>
+
+                    <p>Once again, thank you for joining our team of dedicated volunteers. We are excited to have you
+                        on board, and we look forward to working together in creating a memorable Sri Krishna
+                        Janmashtami 2023.</p>
+
+                    <p>Warm regards,<br>
+                        Volunteer Coordinator Sri Krishna Janmashtami Organizing Committee</p>
                 </div>
             </div>
-            <div class="clr"></div>
         </div>
     </section>
     <section class="footer-section">
